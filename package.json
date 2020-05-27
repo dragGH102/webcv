@@ -1,31 +1,27 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "MIT",
+  "name": "webcv",
+  "description": "Manu web cv",
+  "version": "1.0.0",
+  "dependencies": {
+    "@types/node": "^8.0.7",
+    "@types/react": "15.0.21",
+    "@types/react-dom": "0.14.23",
+    "gatsby": "^1.9.119",
+    "gatsby-link": "^1.6.28",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-typescript": "^1.4.10"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "dependencies": {
-    "gatsby": "^2.21.37",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "format": "prettier --parser typescript --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.ts*\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "prettier": "^1.8.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  "contributors": [
+    "fabien0102 <fabien0102@gmail.com>",
+    "Hays Clark <hays.clark@gmail.com>"
+  ]
 }

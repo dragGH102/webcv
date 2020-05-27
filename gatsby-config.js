@@ -3,6 +3,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: 'Manusolutions'
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+     // Add typescript stack into webpack
+    `gatsby-plugin-typescript`
+  ],
 }
