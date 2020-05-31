@@ -1,7 +1,8 @@
 import * as React from 'react'
 
-const Header = () => (<div>
-  Header future content
+const Header = (props) => (<div>
+  {/*{props.title}*/}
+
 </div>)
 
 export default Header

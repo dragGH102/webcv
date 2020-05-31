@@ -5,4 +5,6 @@ Urls:
 - app running: http://localhost:8000`!
 - graphql playground:`http://localhost:8000/___graphql`
 
-TODO: make private when adding actual data
+TODO: 
+- make private when adding actual data
+- node / other framwork / headless wordpress backend
