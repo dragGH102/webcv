@@ -1,4 +1,5 @@
 import * as React from "react"
+import Layout from "../components/layout"
 
 // You can use https://github.com/dotansimha/graphql-code-generator
 interface IndexPageProps {
@@ -11,24 +12,13 @@ interface IndexPageProps {
   }
 }
 
-export default class extends React.Component<IndexPageProps, {}> {
-  constructor(props: IndexPageProps, context: any) {
-    super(props, context)
-  }
+const IndexPage = (props: IndexPageProps) => (
+  <Layout>
+    {/* slideshow goes here */}
+  </Layout>
+)
 
-  public render() {
-    return (
-      <div>
-        <h1>Hi people</h1>
-        <p>
-          Welcome to your new{" "}
-          <strong>{this.props.data.site.siteMetadata.title}</strong> site.
-        </p>
-        <p>Now go build something great.</p>
-      </div>
-    )
-  }
-}
+export default IndexPage
 
 export const pageQuery = graphql`
   query IndexQuery {
